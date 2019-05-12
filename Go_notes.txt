@@ -1,3 +1,24 @@
+GoLang/Beego Notes
+
+bee new BeegoProject (to create a new project)
+bee run watchall (inside created project)
+
+Dont need to press ctrl+c to switch the sever off for making changes in the file. Beggo handles it itself
+
+/result is an end point
+for first request server sends 200 next request onwards it sends 304 indicatin  the request was succesfully processed and cached
+
+HTTP header can also be used to authorise a user. This is done using JWT(json web token)
+
+Staus Code 	Meaning
+200			Get request succesfully served
+201			Post request succesfully served
+400			Bad request/ invalid json or mising an attribute
+401			Not loggged in/ invalid credentials
+403			Cannot be accessed by normal users, only admins can access the page, it also means authentication was succesfull just that priviledge to view was not there
+404			Not found
+500			server error
+
 go build -> coompiles a bunch of go source files
 go run -> compiles and runs a bunch of go files
 go fmt
