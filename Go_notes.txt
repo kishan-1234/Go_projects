@@ -1,0 +1,48 @@
+go build -> coompiles a bunch of go source files
+go run -> compiles and runs a bunch of go files
+go fmt
+go get
+go install
+go test
+
+main package is use to make an executable type package
+if hello world would be compiled without main package then it wont work(o/p is nothing)
+go build wont even build the package if package name is not main
+
+Array in gO is of fixed length
+Slice is of variable length (must be of same type)
+
+Go is not an oject oriented programming language, there is no suchthing as class in go 
+
+Receiver function in go
+
+Byte slice is nothing but coverwsion of string to ascii values in a slice
+[]byte(stringvariable)
+
+Defualt values in GO:
+"" string
+0 int
+0 float
+false bool
+
+In og passes to function are done by value
+
+When we pass struct to function it is passed ass copy in Go but when we pass Slice it is internally passed as array ad reference is PASSED SO CHANGES CAN VE MADE DIRECTLY
+Maps,Channels, Slices are reference type and behave the same
+
+In go we can embedd an interface inside nother interface
+
+Reader interface takes some source of dara and writes it into byte slice
+Writer interface takes byte slice and writes it into some source of data
+
+Go scheduler will run only one subroutine at a time if the system has only one cpu
+Go default go only uses one cpu core but it can be changed
+
+If system has multiple cpu core then only go routine would help
+
+Concurrency is shifting of processes so fast that we dont have to wait for one process to finish execution whereas
+parallelim is running multiple processes at the same point of time
+
+// main go routine will exit if we dont add a check to wait for the othe go routines to finish the execution
+
+Channels are used to communicate between diffeerent running go routines
